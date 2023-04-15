@@ -46,5 +46,7 @@ function sortTable(n) {
     }
 }
 function removeRow(n) {
-    document.getElementById("table").deleteRow(n);
+    if (confirm('Are you sure you want to delete this line?')) {
+        document.getElementById("table").deleteRow(n);
+    }
 }
